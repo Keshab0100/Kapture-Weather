@@ -5,7 +5,7 @@ const displayCity = document.getElementById('city_name')
 const temp_status = document.getElementById('temp_status')
 const temp = document.getElementById('temp')
 const dataHide = document.querySelector(".main_layer")
-
+const openweather_token = "sample text, enter valid token id";
 
 const getInfo = async (event) =>{
     event.preventDefault();
@@ -16,7 +16,7 @@ const getInfo = async (event) =>{
     }
     else{
         try{
-            let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=16c6d95c43316815ce71d2be5fefcfb1`
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=${openweather_token}`
             const response = await fetch(url);
             const data = await response.json();
             
