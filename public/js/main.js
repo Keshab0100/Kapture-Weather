@@ -29,10 +29,10 @@ const getInfo = async (event) =>{
             if(tempmood=="Clear"){
                 temp_status.innerHTML = `<i class="fas fa-sun" style='color: #eccc68'></i>`;
             }
-            else if(tempmood = "Clouds"){
+            else if(tempmood == "Clouds"){
                 temp_status.innerHTML = `<i class="fas fa-cloud"  style='color: #f1f2f6'></i>`;
             }
-            else if(tempmood = "Rain"){
+            else if(tempmood == "Rain"){
                 temp_status.innerHTML = `<i class="fas fa-cloud-rain"  style='color: #a4b0be'></i>`;
             }
             else{
