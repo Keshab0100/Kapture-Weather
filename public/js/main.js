@@ -11,7 +11,6 @@ const getInfo = async (event) =>{
     event.preventDefault();
     let cityVal = cityName.value;
     if(cityVal===''){
-        alert('Enter valid city name')
         dataHide.classList.add('data_hide');
     }
     else{
@@ -44,7 +43,6 @@ const getInfo = async (event) =>{
 
         }
         catch(error){
-            alert('Enter valid city name')
             dataHide.classList.add('data_hide');
             console.log(error);
         }
