@@ -5,7 +5,7 @@ const displayCity = document.getElementById('city_name')
 const temp_status = document.getElementById('temp_status')
 const temp = document.getElementById('temp')
 const dataHide = document.querySelector(".main_layer")
-const openweather_token = "16c6d95c43316815ce71d2be5fefcfb1";
+const openweather_token = "Sample token";
 
 const getInfo = async (event) =>{
     event.preventDefault();
